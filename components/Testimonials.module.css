@@ -1,0 +1,130 @@
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 112px 80px;
+    gap: 32px;
+    width: 1440px;
+    align-self: stretch;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 12px;
+    width: 1280px;
+    height: 133px;
+    align-self: stretch;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 628px;
+}
+
+.title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 110%;
+    color: #171717;
+}
+
+.subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+    color: #171717;
+}
+
+
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+    width: 1280px;
+    height: 342px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    align-self: stretch;
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    width: 411px;
+    height: 342px;
+    border-radius: 24px;
+    flex-shrink: 0;
+}
+
+.card1 { background: #B2E3F7; }
+.card2 { background: #C8F7A8; }
+.card3 { background: #FF99CA; }
+.card4 { background: #B2E3F7; }
+
+.quote {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 170%;
+    color: #171717;
+}
+
+.authorInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    height: 80px;
+}
+
+.authorImage {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.authorDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.authorName {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #171717;
+}
+
+.authorRole {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+    color: #171717;
+    opacity: 0.8;
+}
