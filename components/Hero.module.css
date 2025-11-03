@@ -1,0 +1,170 @@
+.heroWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 80px;
+    gap: 10px;
+    width: 1440px;
+    height: 673px;
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 180px 80px;
+    gap: 10px;
+    isolation: isolate;
+    width: 1280px;
+    height: 673px;
+    border-radius: 40px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    position: relative;
+    background-color: #6A65FD; /* Added for context */
+}
+
+.bg {
+    position: absolute;
+    width: 1280px;
+    height: 675px;
+    left: 0px;
+    top: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 40px;
+    z-index: 0;
+}
+
+.image {
+    position: absolute;
+    width: 470px;
+    height: auto;
+    left: 739px;
+    top: 2px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 548px;
+    height: 313px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 548px;
+    height: 233px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.title {
+    width: 548px;
+    height: 128px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 110%;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.subtitle {
+    width: 548px;
+    height: 93px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.cta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 23px;
+    width: 366px;
+    height: 48px;
+    flex: none;
+    order: 1;
+    flex-grow: 0; 
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 18px 14px 0px;
+    gap: 8px;
+    background: transparent;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.buttonSecondary {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 8px;
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    background: transparent;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.buttonText {
+    width: 129px;
+    height: 18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
