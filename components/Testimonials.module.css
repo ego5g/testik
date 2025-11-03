@@ -76,11 +76,6 @@
     flex-shrink: 0;
 }
 
-.card1 { background: #B2E3F7; }
-.card2 { background: #C8F7A8; }
-.card3 { background: #FF99CA; }
-.card4 { background: #B2E3F7; }
-
 .quote {
     font-family: 'Poppins';
     font-style: normal;
@@ -88,14 +83,16 @@
     font-size: 20px;
     line-height: 170%;
     color: #171717;
+    flex-grow: 1;
 }
 
 .authorInfo {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 16px;
-    height: 80px;
+    padding: 12px 24px;
+    gap: 10px;
+    border-radius: 24px;
 }
 
 .authorImage {

@@ -30,6 +30,7 @@
     flex-grow: 0;
     position: relative;
     background-color: #6A65FD; /* Added for context */
+    overflow: hidden;
 }
 
 .bg {
@@ -50,8 +51,7 @@
     width: 470px;
     height: auto;
     left: 739px;
-    top: 2px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+    top: 0px;
 }
 
 .content {
