@@ -1,6 +1,7 @@
 .landingPage {
     position: relative;
-    width: 1440px;
-    height: 2811px;
+    width: 100%;
+    max-width: 1440px; /* Keep max-width for larger screens */
+    margin: 0 auto; /* Center the layout */
     background: #FFFFFF;
 }

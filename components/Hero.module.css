@@ -1,3 +1,4 @@
+/* Desktop styles (unchanged) */
 .heroWrapper {
     display: flex;
     flex-direction: column;
@@ -29,7 +30,7 @@
     align-self: stretch;
     flex-grow: 0;
     position: relative;
-    background-color: #6A65FD; /* Added for context */
+    background-color: #6A65FD;
     overflow: hidden;
 }
 
@@ -168,4 +169,80 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .heroWrapper {
+        padding: 0px 16px;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero {
+        padding: 40px 20px;
+        width: 100%;
+        height: auto;
+        min-height: 500px;
+        border-radius: 24px;
+    }
+
+    .bg {
+        width: 100%;
+        height: 100%;
+        border-radius: 24px;
+    }
+
+    .image {
+        position: absolute;
+        width: 60%;
+        height: auto;
+        right: 0;
+        bottom: 0;
+        max-width: 200px;
+    }
+
+    .content {
+        width: 100%;
+        height: auto;
+        gap: 24px;
+    }
+
+    .txt {
+        width: 100%;
+        height: auto;
+        gap: 12px;
+    }
+
+    .title {
+        width: 100%;
+        height: auto;
+        font-size: 32px;
+        line-height: 110%;
+    }
+
+    .subtitle {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+        line-height: 160%;
+    }
+
+    .cta {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        height: auto;
+    }
+
+    .button,
+    .buttonSecondary {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 16px;
+    }
+
+    .buttonText {
+        width: auto;
+    }
 }
