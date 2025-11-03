@@ -1,14 +1,15 @@
-
 .ctaWrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px 80px;
     gap: 10px;
-    width: 1440px;
-}
-
-.content {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,27 +17,27 @@
     padding: 120px 80px;
     gap: 10px;
     isolation: isolate;
-    width: 1280px;
-    height: 493px;
+    width: 100%;
+    min-height: 493px;
     border-radius: 40px;
     position: relative;
     overflow: hidden;
-}
-
-.bg {
+  }
+  
+  .bg {
     position: absolute;
     width: 100%;
     height: 100%;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     background-image: url('/bgcta.png');
     background-size: cover;
     background-position: center;
     z-index: -1;
-    background-color: #272928; /* Fallback color */
-}
-
-.image {
+    background-color: #272928; /* fallback */
+  }
+  
+  .image {
     position: absolute;
     width: 443px;
     height: 872px;
@@ -45,29 +46,27 @@
     background-image: url('/image.png');
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-.contentContainer {
+  }
+  
+  .contentContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0px;
     gap: 32px;
     width: 548px;
     z-index: 1;
-}
-
-.text {
+  }
+  
+  .text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     gap: 12px;
     align-self: stretch;
-}
-
-.title {
+  }
+  
+  .title {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -75,22 +74,126 @@
     line-height: 110%;
     color: #FFFFFF;
     align-self: stretch;
-}
-
-.subtitle {
+  }
+  
+  .subtitle {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 170%;
     color: #FFFFFF;
-}
-
-.buttons {
+  }
+  
+  .buttons {
     display: flex;
     flex-direction: row;
-    cursor: pointer;
     align-items: center;
-    padding: 0px;
     gap: 23px;
-}
+    cursor: pointer;
+  }
+  
+  /* --- Планшеты --- */
+  @media (max-width: 1024px) {
+    .ctaWrapper {
+      padding: 0 40px;
+    }
+  
+    .content {
+      padding: 80px 40px;
+      border-radius: 32px;
+    }
+  
+    .image {
+      width: 320px;
+      height: 640px;
+      left: auto;
+      right: 20px;
+      top: 60px;
+      opacity: 0.9;
+    }
+  
+    .contentContainer {
+      width: 60%;
+    }
+  
+    .title {
+      font-size: 42px;
+    }
+  
+    .subtitle {
+      font-size: 16px;
+    }
+  }
+  
+  /* --- Смартфоны --- */
+  @media (max-width: 768px) {
+    .ctaWrapper {
+      padding: 0 20px;
+    }
+  
+    .content {
+      padding: 60px 24px;
+      border-radius: 28px;
+    }
+  
+    .image {
+      position: static;
+      width: 100%;
+      height: 300px;
+      margin-top: 24px;
+      opacity: 0.8;
+      background-position: center bottom;
+    }
+  
+    .contentContainer {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .text {
+      align-items: center;
+    }
+  
+    .title {
+      font-size: 32px;
+      line-height: 1.2;
+    }
+  
+    .subtitle {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  
+  /* --- Маленькие экраны (до 480px) --- */
+  @media (max-width: 480px) {
+    .content {
+      padding: 40px 16px;
+      border-radius: 24px;
+    }
+  
+    .title {
+      font-size: 26px;
+    }
+  
+    .subtitle {
+      font-size: 14px;
+    }
+  
+    .image {
+      height: 220px;
+      opacity: 0.7;
+    }
+  
+    .buttons {
+      gap: 12px;
+    }
+  }
+  
