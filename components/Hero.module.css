@@ -152,6 +152,7 @@
     background: transparent;
     flex: none;
     order: 1;
+    cursor: pointer;
     flex-grow: 0;
 }
 

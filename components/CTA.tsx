@@ -14,7 +14,7 @@ export default function CTA() {
             </p>
           </div>
           <div className={styles.buttons}>
-            <img src="/appstore.svg" alt="App Store" />
+            <img src="/appstore.png" alt="App Store" />
             <img src="/googleplay.svg" alt="Google Play" />
           </div>
         </div>

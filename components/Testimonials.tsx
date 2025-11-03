@@ -74,7 +74,7 @@ export default function Testimonials() {
         <div className={styles.text}>
           <h2 className={styles.title}>Testimonials</h2>
           <p className={styles.subtitle}>
-            Don\'t just take our word for it - hear from our satisfied clients who have experienced the transformative impact of our Al text tool.
+            Don't just take our word for it - hear from our satisfied clients who have experienced the transformative impact of our Al text tool.
           </p>
         </div>
         <div className={styles.arrows}>
@@ -95,7 +95,7 @@ export default function Testimonials() {
           <div key={index} className={`${styles.card} ${testimonial.cardClass}`}>
             <p className={styles.quote}>{testimonial.quote}</p>
             <div className={styles.authorInfo}>
-              <div className={styles.authorImage} style={{ backgroundImage: `url(${testimonial.image})` }}></div>
+              <img src={testimonial.image} className={styles.authorImage} alt={testimonial.name} />
               <div className={styles.authorDetails}>
                 <span className={styles.authorName}>{testimonial.name}</span>
                 <span className={styles.authorRole}>{testimonial.role}</span>
