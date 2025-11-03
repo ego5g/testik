@@ -87,21 +87,17 @@
 }
 
 .authorInfo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px 24px;
-    gap: 10px;
-    border-radius: 24px;
+    justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  display: inline-flex;
 }
 
 .authorImage {
     width: 80px;
-    height: 80px;
-    border: 2px solid #FFFFFF;
-    border-radius: 50%;
-    object-fit: cover;
-    overflow: hidden;
+  height: 80px;
+  border-radius: 9999px;
+  border: 2px var(--Color-Brand-White, white) solid;
 }
 
 .authorDetails {

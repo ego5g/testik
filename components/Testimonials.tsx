@@ -74,7 +74,7 @@ export default function Testimonials() {
         <div className={styles.text}>
           <h2 className={styles.title}>Testimonials</h2>
           <p className={styles.subtitle}>
-            Don\'t just take our word for it - hear from our satisfied clients who have experienced the transformative impact of our Al text tool.
+            Don't just take our word for it - hear from our satisfied clients who have experienced the transformative impact of our Al text tool.
           </p>
         </div>
         <div className={styles.arrows}>
