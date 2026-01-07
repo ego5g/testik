@@ -1,10 +1,9 @@
-import styles from './Header.module.css';
 
 export default function Header() {
   return (
-    <header className={styles.header}>
-      <img src='/logo.svg' alt="Logo" className={styles.logo} />
-      <button className={styles.button}>
+    <header className="flex justify-between items-center px-6 py-4">
+      <img src='/logo.svg' alt="Logo" className="h-8" />
+      <button>
         <img src='/Primary.svg' alt="Primary" />
       </button>
     </header>
